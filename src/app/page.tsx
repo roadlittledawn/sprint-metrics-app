@@ -78,7 +78,7 @@ export default function Home() {
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
                 Sprint Dashboard
               </h1>
-              <p className="text-gray-600 mt-1 text-sm sm:text-base">
+              <p className="text-gray-700 mt-1 text-sm sm:text-base">
                 Track your team&apos;s sprint performance and metrics
               </p>
             </div>
@@ -184,7 +184,7 @@ export default function Home() {
             <section className="text-center py-8 sm:py-12">
               <div className="bg-white rounded-lg border border-gray-200 p-6 sm:p-8">
                 <svg
-                  className="mx-auto h-12 w-12 text-gray-400 mb-4"
+                  className="mx-auto h-12 w-12 text-gray-500 mb-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -199,7 +199,7 @@ export default function Home() {
                 <h3 className="text-lg font-medium text-gray-900 mb-2">
                   No Sprint Data Available
                 </h3>
-                <p className="text-gray-600 mb-6 text-sm sm:text-base">
+                <p className="text-gray-700 mb-6 text-sm sm:text-base">
                   Get started by adding your first sprint in the admin panel.
                 </p>
                 <Link
@@ -279,7 +279,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 mt-8 sm:mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <p className="text-sm text-gray-500 text-center">
+          <p className="text-sm text-gray-600 text-center">
             © 2024 Sprint Data Tracker. Built with Next.js and Tailwind CSS.
           </p>
         </div>

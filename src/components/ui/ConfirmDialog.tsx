@@ -74,7 +74,7 @@ export default function ConfirmDialog({
           </h3>
         </div>
 
-        <p id="dialog-message" className="text-gray-600 mb-6">
+        <p id="dialog-message" className="text-gray-700 mb-6">
           {message}
         </p>
 

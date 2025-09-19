@@ -46,7 +46,7 @@ export default function ProgressBar({
             <span className="text-sm font-medium text-gray-700">{label}</span>
           )}
           {showPercentage && (
-            <span className="text-sm text-gray-600">
+            <span className="text-sm text-gray-700">
               {percentage.toFixed(1)}%
             </span>
           )}

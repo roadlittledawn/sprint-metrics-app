@@ -104,7 +104,7 @@ export default function ErrorDisplay({
       default:
         return {
           container: "bg-gray-50 border-gray-200",
-          icon: "text-gray-600",
+          icon: "text-gray-700",
           title: "text-gray-800",
           message: "text-gray-700",
         };

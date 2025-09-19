@@ -194,7 +194,7 @@ export default function DataExportImport({
           </button>
         </div>
 
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-sm text-gray-700 mt-2">
           CSV exports sprint data only. JSON exports complete data including
           team configuration.
         </p>
@@ -243,7 +243,7 @@ export default function DataExportImport({
           />
         </div>
 
-        <p className="text-sm text-gray-600 mt-2">
+        <p className="text-sm text-gray-700 mt-2">
           Supports CSV and JSON files. A backup will be created automatically
           before importing.
         </p>
@@ -307,11 +307,11 @@ export default function DataExportImport({
         <h4 className="text-sm font-medium text-gray-700 mb-2">Current Data</h4>
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div>
-            <span className="text-gray-600">Sprints:</span>
+            <span className="text-gray-700">Sprints:</span>
             <span className="ml-2 font-medium">{appData.sprints.length}</span>
           </div>
           <div>
-            <span className="text-gray-600">Team Members:</span>
+            <span className="text-gray-700">Team Members:</span>
             <span className="ml-2 font-medium">
               {appData.config.teamMembers.length}
             </span>

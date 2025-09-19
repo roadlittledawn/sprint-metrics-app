@@ -216,7 +216,7 @@ export default function SprintComparisonCharts({
             Sprint Comparison
           </h3>
         </div>
-        <div className="flex items-center justify-center h-64 text-gray-500">
+        <div className="flex items-center justify-center h-64 text-gray-700">
           <div className="text-center">
             <p className="text-lg mb-2">No sprint data available</p>
             <p className="text-sm">Add sprint data to see comparisons</p>

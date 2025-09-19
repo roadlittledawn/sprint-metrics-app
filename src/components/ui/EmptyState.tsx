@@ -27,7 +27,7 @@ export default function EmptyState({
         {icon}
       </div>
       <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600 mb-6 max-w-md mx-auto">{description}</p>
+      <p className="text-gray-700 mb-6 max-w-md mx-auto">{description}</p>
       {actionText && onAction && (
         <button
           onClick={onAction}

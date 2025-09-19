@@ -29,7 +29,7 @@ export default function LoadingSpinner({
         aria-label="Loading"
       />
       {text && (
-        <p className="mt-2 text-sm text-gray-600" aria-live="polite">
+        <p className="mt-2 text-sm text-gray-700" aria-live="polite">
           {text}
         </p>
       )}

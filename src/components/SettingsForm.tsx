@@ -191,7 +191,7 @@ export default function SettingsForm({
                       : "border-gray-300 focus:border-blue-500"
                   }`}
                 />
-                <span className="text-sm text-gray-600">
+                <span className="text-sm text-gray-700">
                   sprints (used for forecasting)
                 </span>
               </div>
@@ -200,7 +200,7 @@ export default function SettingsForm({
                   {errors.velocityCalculationSprints}
                 </p>
               )}
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-600 mt-1">
                 Higher values provide more stable forecasts but may be less
                 responsive to recent changes. Recommended: 4-8 sprints.
               </p>
@@ -262,7 +262,7 @@ export default function SettingsForm({
                   {errors.defaultMeetingPercentage}
                 </p>
               )}
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-600 mt-1">
                 Default percentage of gross hours allocated to meetings for new
                 team members. Typical range: 15-25%.
               </p>
@@ -297,7 +297,7 @@ export default function SettingsForm({
               disabled={isSubmitting || !isDirty}
               className={`flex-1 sm:flex-none px-6 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${
                 isSubmitting || !isDirty
-                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  ? "bg-gray-300 text-gray-600 cursor-not-allowed"
                   : "bg-blue-600 text-white hover:bg-blue-700"
               }`}
             >

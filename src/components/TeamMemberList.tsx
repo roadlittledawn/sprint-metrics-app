@@ -76,7 +76,7 @@ export default function TeamMemberList({
       <div className="p-6">
         {teamMembers.length === 0 ? (
           <div className="text-center py-8">
-            <div className="text-gray-400 mb-4">
+            <div className="text-gray-600 mb-4">
               <svg
                 className="mx-auto h-12 w-12"
                 fill="none"
@@ -91,8 +91,8 @@ export default function TeamMemberList({
                 />
               </svg>
             </div>
-            <p className="text-gray-500 text-lg">No team members added yet</p>
-            <p className="text-gray-400 text-sm mt-1">
+            <p className="text-gray-700 text-lg">No team members added yet</p>
+            <p className="text-gray-600 text-sm mt-1">
               Add team members to start tracking sprint capacity
             </p>
           </div>
@@ -101,25 +101,25 @@ export default function TeamMemberList({
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     Name
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     Gross Hours
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     On-Call
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     Meetings
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     Time Off
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     Net Hours
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
                     Actions
                   </th>
                 </tr>

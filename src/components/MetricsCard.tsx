@@ -59,7 +59,7 @@ const TrendIcon: React.FC<{ direction: TrendDirection }> = ({ direction }) => {
     default:
       return (
         <svg
-          className={`${baseClasses} text-gray-400`}
+          className={`${baseClasses} text-gray-500`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -120,7 +120,7 @@ export default function MetricsCard({
         return "text-red-600";
       case "neutral":
       default:
-        return "text-gray-500";
+        return "text-gray-600";
     }
   };
 
@@ -134,11 +134,11 @@ export default function MetricsCard({
         <>
           {/* Header */}
           <div className="flex items-center justify-between mb-2">
-            <h3 className="text-sm font-medium text-gray-600 uppercase tracking-wide">
+            <h3 className="text-sm font-medium text-gray-700 uppercase tracking-wide">
               {title}
             </h3>
             {timePeriod && (
-              <span className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">
+              <span className="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded-full">
                 {timePeriod}
               </span>
             )}
@@ -165,9 +165,9 @@ export default function MetricsCard({
 
           {/* Subtitle and Trend Label */}
           <div className="space-y-1">
-            {subtitle && <p className="text-sm text-gray-600">{subtitle}</p>}
+            {subtitle && <p className="text-sm text-gray-700">{subtitle}</p>}
             {trend?.label && (
-              <p className="text-xs text-gray-500">{trend.label}</p>
+              <p className="text-xs text-gray-600">{trend.label}</p>
             )}
           </div>
         </>

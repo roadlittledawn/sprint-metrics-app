@@ -273,7 +273,7 @@ export default function TeamMemberForm({
           )}
 
           {useMeetingPercentage && (
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-700">
               Meeting hours: {formData.meetingHours.toFixed(1)} hours (
               {defaultMeetingPercentage}% of gross hours)
             </p>
@@ -312,7 +312,7 @@ export default function TeamMemberForm({
               {formData.netHours.toFixed(1)}
             </span>
           </p>
-          <p className="text-xs text-gray-600 mt-1">
+          <p className="text-xs text-gray-700 mt-1">
             Calculated as: Total Gross Hours - On-Call Hours - Meeting Hours -
             Time Off Hours
           </p>

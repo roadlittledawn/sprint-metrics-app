@@ -179,7 +179,7 @@ export default function AdminPage() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading admin panel...</p>
+          <p className="text-gray-700">Loading admin panel...</p>
         </div>
       </div>
     );
@@ -241,7 +241,7 @@ export default function AdminPage() {
               <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
                 Admin Panel
               </h1>
-              <p className="text-gray-600 mt-1 text-sm sm:text-base">
+              <p className="text-gray-700 mt-1 text-sm sm:text-base">
                 Manage your sprint data and team configuration
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function AdminPage() {
               className={`py-2 px-3 sm:px-1 border-b-2 font-medium text-sm rounded-t-lg sm:rounded-none transition-colors ${
                 activeTab === "sprints"
                   ? "border-blue-500 text-blue-600 bg-blue-50 sm:bg-transparent"
-                  : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
+                  : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
               }`}
             >
               <svg
@@ -295,7 +295,7 @@ export default function AdminPage() {
               className={`py-2 px-3 sm:px-1 border-b-2 font-medium text-sm rounded-t-lg sm:rounded-none transition-colors ${
                 activeTab === "team"
                   ? "border-blue-500 text-blue-600 bg-blue-50 sm:bg-transparent"
-                  : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
+                  : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
               }`}
             >
               <svg
@@ -318,7 +318,7 @@ export default function AdminPage() {
               className={`py-2 px-3 sm:px-1 border-b-2 font-medium text-sm rounded-t-lg sm:rounded-none transition-colors ${
                 activeTab === "data"
                   ? "border-blue-500 text-blue-600 bg-blue-50 sm:bg-transparent"
-                  : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
+                  : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
               }`}
             >
               <svg
@@ -341,7 +341,7 @@ export default function AdminPage() {
               className={`py-2 px-3 sm:px-1 border-b-2 font-medium text-sm rounded-t-lg sm:rounded-none transition-colors ${
                 activeTab === "settings"
                   ? "border-blue-500 text-blue-600 bg-blue-50 sm:bg-transparent"
-                  : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
+                  : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300 hover:bg-gray-50 sm:hover:bg-transparent"
               }`}
             >
               <svg
@@ -519,7 +519,7 @@ export default function AdminPage() {
                     />
                   </svg>
                   <div>
-                    <h3 className="text-sm font-medium text-gray-500">
+                    <h3 className="text-sm font-medium text-gray-700">
                       Total Sprints
                     </h3>
                     <p className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -544,7 +544,7 @@ export default function AdminPage() {
                     />
                   </svg>
                   <div>
-                    <h3 className="text-sm font-medium text-gray-500">
+                    <h3 className="text-sm font-medium text-gray-700">
                       Team Members
                     </h3>
                     <p className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -569,7 +569,7 @@ export default function AdminPage() {
                     />
                   </svg>
                   <div>
-                    <h3 className="text-sm font-medium text-gray-500">
+                    <h3 className="text-sm font-medium text-gray-700">
                       Avg Velocity
                     </h3>
                     <p className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -601,7 +601,7 @@ export default function AdminPage() {
                     />
                   </svg>
                   <div>
-                    <h3 className="text-sm font-medium text-gray-500">
+                    <h3 className="text-sm font-medium text-gray-700">
                       Avg Completion
                     </h3>
                     <p className="text-xl sm:text-2xl font-bold text-gray-900">

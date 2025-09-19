@@ -210,7 +210,7 @@ export default function SprintHistory({
       </div>
 
       {filteredSprints.length === 0 && searchTerm && (
-        <div className="text-center py-4 text-gray-500">
+        <div className="text-center py-4 text-gray-700">
           <p>No sprints found matching &quot;{searchTerm}&quot;</p>
         </div>
       )}

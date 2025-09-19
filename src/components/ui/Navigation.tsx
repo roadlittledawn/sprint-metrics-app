@@ -2,6 +2,8 @@
  * Accessible navigation component with keyboard support
  */
 
+"use client";
+
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -96,7 +98,7 @@ export default function Navigation({ items, className = "" }: NavigationProps) {
         ref={buttonRef}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         onKeyDown={handleKeyDown}
-        className="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="md:hidden flex items-center px-3 py-2 border rounded text-gray-300 border-gray-500 hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-blue-500"
         aria-expanded={isMenuOpen}
         aria-haspopup="true"
         aria-label="Toggle navigation menu"

@@ -42,7 +42,7 @@ export default function TeamCapacityBreakdown({
     return (
       <div className="bg-gray-50 p-4 rounded-md">
         <h4 className="font-medium text-gray-900 mb-2">{title}</h4>
-        <p className="text-gray-600 text-sm">No team members configured</p>
+        <p className="text-gray-700 text-sm">No team members configured</p>
       </div>
     );
   }
@@ -66,7 +66,7 @@ export default function TeamCapacityBreakdown({
           <div className="text-sm text-green-800">Net Hours</div>
         </div>
         <div className="bg-gray-50 p-3 rounded-md text-center">
-          <div className="text-2xl font-bold text-gray-600">
+          <div className="text-2xl font-bold text-gray-800">
             {totalGrossHours.toFixed(1)}h
           </div>
           <div className="text-sm text-gray-800">Gross Hours</div>
@@ -133,7 +133,7 @@ export default function TeamCapacityBreakdown({
             </>
           )}
         </div>
-        <div className="flex justify-between text-xs text-gray-600 mt-1">
+        <div className="flex justify-between text-xs text-gray-700 mt-1">
           <div className="flex items-center">
             <div className="w-3 h-3 bg-green-500 rounded mr-1"></div>
             Net ({totalWorkingHours.toFixed(1)}h)
@@ -198,16 +198,16 @@ export default function TeamCapacityBreakdown({
                       <td className="px-3 py-2 font-medium text-gray-900">
                         {member.name}
                       </td>
-                      <td className="px-3 py-2 text-right text-gray-600">
+                      <td className="px-3 py-2 text-right text-gray-700">
                         {member.totalGrossHours.toFixed(1)}h
                       </td>
-                      <td className="px-3 py-2 text-right text-gray-600">
+                      <td className="px-3 py-2 text-right text-gray-700">
                         {member.onCallHours.toFixed(1)}h
                       </td>
-                      <td className="px-3 py-2 text-right text-gray-600">
+                      <td className="px-3 py-2 text-right text-gray-700">
                         {member.meetingHours.toFixed(1)}h
                       </td>
-                      <td className="px-3 py-2 text-right text-gray-600">
+                      <td className="px-3 py-2 text-right text-gray-700">
                         {member.timeOffHours.toFixed(1)}h
                       </td>
                       <td className="px-3 py-2 text-right font-medium text-blue-600">

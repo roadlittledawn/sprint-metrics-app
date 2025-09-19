@@ -93,7 +93,7 @@ describe("MetricsCard", () => {
       const trendIcon = screen
         .getByText("0")
         .parentElement?.querySelector("svg");
-      expect(trendIcon).toHaveClass("text-gray-400");
+      expect(trendIcon).toHaveClass("text-gray-500");
     });
 
     it("renders trend without label", () => {

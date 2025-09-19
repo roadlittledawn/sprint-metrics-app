@@ -104,7 +104,7 @@ export default function VelocityTrendChart({
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-medium text-gray-900">Velocity Trend</h3>
         </div>
-        <div className="flex items-center justify-center h-64 text-gray-500">
+        <div className="flex items-center justify-center h-64 text-gray-700">
           <div className="text-center">
             <p className="text-lg mb-2">No sprint data available</p>
             <p className="text-sm">Add sprint data to see velocity trends</p>

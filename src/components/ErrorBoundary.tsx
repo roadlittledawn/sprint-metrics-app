@@ -105,7 +105,7 @@ export default class ErrorBoundary extends Component<Props, State> {
               </h1>
 
               {/* Error Message */}
-              <p className="text-gray-600 text-center mb-6">
+              <p className="text-gray-700 text-center mb-6">
                 {errorDisplay.message}
               </p>
 
@@ -115,7 +115,7 @@ export default class ErrorBoundary extends Component<Props, State> {
                   <h3 className="text-sm font-medium text-gray-900 mb-2">
                     What you can try:
                   </h3>
-                  <ul className="text-sm text-gray-600 space-y-1">
+                  <ul className="text-sm text-gray-700 space-y-1">
                     {errorDisplay.suggestions.map((suggestion, index) => (
                       <li key={index} className="flex items-start">
                         <span className="text-blue-500 mr-2">•</span>
@@ -147,7 +147,7 @@ export default class ErrorBoundary extends Component<Props, State> {
               {/* Technical Details (Development Only) */}
               {process.env.NODE_ENV === "development" && (
                 <details className="mt-6">
-                  <summary className="text-sm text-gray-500 cursor-pointer hover:text-gray-700">
+                  <summary className="text-sm text-gray-600 cursor-pointer hover:text-gray-800">
                     Technical Details
                   </summary>
                   <div className="mt-2 p-3 bg-gray-100 rounded text-xs font-mono text-gray-700 overflow-auto max-h-40">
