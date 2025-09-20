@@ -3,10 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import DashboardMetrics from "@/components/DashboardMetrics";
-import {
-  VelocityTrendChart,
-  SprintComparisonCharts,
-} from "@/components/charts";
+import VelocityTrendChartNew from "@/components/charts/VelocityTrendChartNew";
+import SprintComparisonChartsNew from "@/components/charts/SprintComparisonChartsNew";
 import { Sprint, ApiResponse } from "@/lib/types";
 
 export default function Home() {
@@ -146,14 +144,14 @@ export default function Home() {
             ) : (
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-8">
                 {/* Velocity Trend Chart */}
-                <VelocityTrendChart
+                <VelocityTrendChartNew
                   sprints={sprints}
                   height={300}
                   className="col-span-1"
                 />
 
                 {/* Sprint Comparison Charts */}
-                <SprintComparisonCharts
+                <SprintComparisonChartsNew
                   sprints={sprints}
                   height={300}
                   className="col-span-1"
@@ -169,7 +167,7 @@ export default function Home() {
                 Detailed Analysis
               </h2>
               <div className="overflow-x-auto">
-                <SprintComparisonCharts
+                <SprintComparisonChartsNew
                   sprints={sprints}
                   height={400}
                   defaultTimeRange={18}

@@ -3,10 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import DashboardMetrics from "@/components/DashboardMetrics";
-import {
-  VelocityTrendChart,
-  SprintComparisonCharts,
-} from "@/components/charts";
+import VelocityTrendChartNew from "@/components/charts/VelocityTrendChartNew";
+import SprintComparisonChartsNew from "@/components/charts/SprintComparisonChartsNew";
 import { Sprint, ApiResponse } from "@/lib/types";
 
 export default function Dashboard() {
@@ -131,14 +129,14 @@ export default function Dashboard() {
             ) : (
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                 {/* Velocity Trend Chart */}
-                <VelocityTrendChart
+                <VelocityTrendChartNew
                   sprints={sprints}
                   height={350}
                   className="col-span-1"
                 />
 
                 {/* Sprint Comparison Charts */}
-                <SprintComparisonCharts
+                <SprintComparisonChartsNew
                   sprints={sprints}
                   height={350}
                   className="col-span-1"
@@ -153,7 +151,7 @@ export default function Dashboard() {
               <h2 className="text-xl font-semibold text-gray-900 mb-6">
                 Detailed Analysis
               </h2>
-              <SprintComparisonCharts
+              <SprintComparisonChartsNew
                 sprints={sprints}
                 height={450}
                 defaultTimeRange={18}
