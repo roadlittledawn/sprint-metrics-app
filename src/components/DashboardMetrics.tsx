@@ -55,18 +55,24 @@ export default function DashboardMetrics({
   };
 
   // Helper function to format percentage values
-  const formatPercentage = (value: number): string => {
-    return `${value.toFixed(1)}%`;
+  const formatPercentage = (value: string | number): string => {
+    const numValue = typeof value === "string" ? parseFloat(value) : value;
+    if (isNaN(numValue)) return "0.0%";
+    return `${numValue.toFixed(1)}%`;
   };
 
   // Helper function to format velocity values
-  const formatVelocity = (value: number): string => {
-    return `${value.toFixed(3)} pts/hr`;
+  const formatVelocity = (value: string | number): string => {
+    const numValue = typeof value === "string" ? parseFloat(value) : value;
+    if (isNaN(numValue)) return "0.000 pts/hr";
+    return `${numValue.toFixed(3)} pts/hr`;
   };
 
   // Helper function to format capacity values
-  const formatCapacity = (value: number): string => {
-    return `${value.toFixed(1)} pts`;
+  const formatCapacity = (value: string | number): string => {
+    const numValue = typeof value === "string" ? parseFloat(value) : value;
+    if (isNaN(numValue)) return "0.0 pts";
+    return `${numValue.toFixed(1)} pts`;
   };
 
   if (isLoading) {
